@@ -1,6 +1,8 @@
 # Insurance-Dashboard-Analysis
 
-
+# Data Transformation
+Data quality issues were identified in the table count of opened and closed policies. Invalid values '1' had to be cleaned up.
+![policies count issue](https://github.com/bayyangjie/Insurance-Dashboard-Analysis/blob/main/images/policies_count.png)
 
 # Concepts Utilized
 
