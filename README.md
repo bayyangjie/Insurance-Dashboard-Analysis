@@ -20,6 +20,7 @@ Policy Count = COUNTROWS(policies)
 
 Policies Opened = [Policy Count]
 ```
+<br>
 
 **Number of policies closed**:
 USERELATIONSHIP(): Deactivates the relationship between 'DATE' key and 'INSR_BEGIN' key and activates the relationship between 'DATE' key and 'INSR_END' key to count the number of policies closed. The columns involved are those that define the activated relationship (i.e Policy Count, Date, INSR_END). <br>
@@ -35,6 +36,8 @@ The average claim for claims made is calculated by summing up non-zero values un
 ```dax
 Avg. Claim_Made = AVERAGE(policies[CLAIM_PAID])
 ```
+
+<br>
 
 **Average Claim of all opened policies**:
 The average claim for all policies that were opened (regardless whether a claim was made) is calculated by adding up all values under 'CLAIM_PAID' column and dividing by the TOTAL number of ROWS. 
