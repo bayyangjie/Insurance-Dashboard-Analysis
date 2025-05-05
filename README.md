@@ -36,3 +36,8 @@ This represents a more accurate representation of the average claims per year as
 ```dax
 Avg.Claim_All = DIVIDE([Total Claims],[Policies Opened])
 ```
+
+Claim Count: Calculates the number of claims that were made out of the total number of policies opened.
+```dax
+Claim Count = CALCULATE([Policy Count], policies[CLAIM_PAID]>0)
+```
