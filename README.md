@@ -31,7 +31,8 @@ The average claim for claims made is calculated by summing up non-zero values un
 Avg. Claim_Made = AVERAGE(policies[CLAIM_PAID])
 ```
 
-The average claim for all policies that were opened (regardless whether a claim was made) is calculated by adding up all values under 'CLAIM_PAID' column and dividing by the TOTAL number of ROWS.
+The average claim for all policies that were opened (regardless whether a claim was made) is calculated by adding up all values under 'CLAIM_PAID' column and dividing by the TOTAL number of ROWS. 
+This represents a more accurate representation of the average claims per year as it considers all opened policies instead of only cases where a claim was made.
 ```dax
 Avg.Claim_All = DIVIDE([Total Claims],[Policies Opened])
 ```
