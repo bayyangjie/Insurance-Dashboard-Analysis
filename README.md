@@ -69,3 +69,11 @@ Bar Chart Labels =
 return
     v_type & " " & policies & " " & p2c
 ```
+
+
+# Visualizations
+
+## Scatterplot of Average Premium and Claims by Vehicle Type and Make
+Symmetry shading was used to distinguish the Vehicle Type and Make models that were generating profit from the loss making ones. This can be seen from the red area that indicates loss making vehicle types/makes and purple region representing the profit making vehicle types/makes.
+
+
