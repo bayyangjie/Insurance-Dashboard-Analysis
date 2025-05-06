@@ -1,4 +1,5 @@
 # Insurance-Dashboard-Analysis
+![Dashboard](https://github.com/bayyangjie/Insurance-Dashboard-Analysis/blob/main/images/dashboard_overall.png)
 
 # Data Transformation
 Data quality issues were identified in the table count of opened and closed policies. Invalid values '1' had to be cleaned up. <br>
@@ -90,4 +91,5 @@ Symmetry shading was used to distinguish the Vehicle Type and Make models that w
 ## Premium vs Claims Ratio Scatterplot and Matrix Chart
 Both charts show which vehicle type/make and usage type would be the most worthwhile to invest in based on the ratio values returned. However, that alone does not justify enough for the company to open more insurance policies in. Tool tips are added to provide information about the number of each vehicle types to justify whether to continue creating insurance policies for a vehicle type.
 
-
+## Proportion of claims by Gender type
+A donut chart was created to display the proportion of claims
