@@ -74,6 +74,6 @@ return
 # Visualizations
 
 ## Scatterplot of Average Premium and Claims by Vehicle Type and Make
-Symmetry shading was used to distinguish the Vehicle Type and Make models that were generating profit from the loss making ones. This can be seen from the red area that indicates loss making vehicle types/makes and purple region representing the profit making vehicle types/makes.
+Symmetry shading was used to distinguish the Vehicle Type and Make models that were generating profit (purple) from the loss-making vehicle types/makes (red).
 
 
