@@ -77,3 +77,5 @@ return
 Symmetry shading was used to distinguish the Vehicle Type and Make models that were generating profit (purple) from the loss-making vehicle types/makes (red).
 
 
+## Premium vs Claims Ratio Scatterplot and Matrix Chart
+Both charts show which vehicle type/make and usage type would be the most worthwhile to invest in based on the ratio values returned. However, that alone does not justify enough for the company to open more insurance policies in. Tool tips are added to provide information about the number of opened policies, average claim and premium amounts to provide a clearer picture on which vehicle types and makes are worth creating policies in.
