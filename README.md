@@ -70,6 +70,16 @@ return
     v_type & " " & policies & " " & p2c
 ```
 
+**Creating context to tool tip labels**:
+In the Premium vs Claim (Averages) scatter plot, the tooltip information was further enhanced by adding more information about what vehicle type and make each dot represents. 
+The following DAX expression was used to display the vehicle type and make in addition to the information about the vehicle make's policy.
+```dax
+Tooltip Header = 
+    var v_type = SELECTEDVALUE(policies[TYPE_VEHICLE])
+    var v_make = SELECTEDVALUE(policies[MAKE])
+return
+    v_type & " - " & v_make
+```
 
 # Visualizations
 
@@ -79,3 +89,5 @@ Symmetry shading was used to distinguish the Vehicle Type and Make models that w
 
 ## Premium vs Claims Ratio Scatterplot and Matrix Chart
 Both charts show which vehicle type/make and usage type would be the most worthwhile to invest in based on the ratio values returned. However, that alone does not justify enough for the company to open more insurance policies in. Tool tips are added to provide information about the number of each vehicle types to justify whether to continue creating insurance policies for a vehicle type.
+
+
