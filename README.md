@@ -106,13 +106,18 @@ return
 # Visualizations
 
 ## Average Premium vs Claims by Vehicle Type and Make (Scatterplot)
-The average premiums and claims of each vehicle type and make are plotted on a scatterplot to determine whether majority of vehicles are generating losses (red) or profits (purple). It also allows us to identify the exact vehicle type/make 
+The average premiums and claims of each vehicle type and make are plotted on a scatterplot to determine whether majority of vehicles are generating losses (red) or profits (purple), and this can be viewed yearly using the 'Year' filter.
 
 The tooltip information is enhanced to include more information about the number of policies opened for each vehicle type/make. That helps in further justifying whether policies should still be continued for a specific vehicle type/make coupled with the location of the scatter point in the chart. <br>
 
 ![premium vs claim](https://github.com/bayyangjie/Insurance-Dashboard-Analysis/blob/main/images/scatterplot.png)
 
 ## Policy Claim count by Gender type
-The chart showed that Gender Type 0 had opened the most policies as well as also having the most claims as compared to Gender Type 0 and 1. <br>
+Gender Type "0" had opened the most policies as well as also having the most claims as compared to Gender Type "0" and "1". <br>
 
 ![Donut Chart](https://github.com/bayyangjie/Insurance-Dashboard-Analysis/blob/main/images/donut%20chart.png)
+
+## Claim Amount by Usage Type
+The chart shows the claim amount of each usage type for each year from 2014 to 2018. It also shows how the rankings of the different usage segments change over the years. <br>
+
+![usage_claim amt_ribbon](https://github.com/bayyangjie/Insurance-Dashboard-Analysis/blob/main/images/ribbon%20chart.png)
