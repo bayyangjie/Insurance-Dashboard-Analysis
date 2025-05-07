@@ -1,4 +1,5 @@
 # Insurance-Dashboard-Analysis
+This analysis aims to discover what were the reasons that contributed to the losses of an insurance company. 
 ![Dashboard](https://github.com/bayyangjie/Insurance-Dashboard-Analysis/blob/main/images/dashboard_overall.png)
 
 # Data Transformation
@@ -10,9 +11,37 @@ Before: <br>
 After: <br>
 ![cleaned](https://github.com/bayyangjie/Insurance-Dashboard-Analysis/blob/main/images/policies_count_cleaned.png)
 
-# Concepts Utilized
+# DAX Measures
 
-## DAX Measures
+**Total Claims**:
+Total amount of claims submitted.
+```dax
+Total Claims = SUM(policies[CLAIM_PAID])
+```
+
+<br>
+
+**Average Premiums Paid by Clients**:
+```dax
+Avg.Premium = AVERAGE(policies[PREMIUM])
+```
+
+<br>
+
+**Average Claim Amount of all opened policies**:
+This calculates the average claim amount regardless whether a claim was submitted on the policy or not. 
+```dax
+Avg.Claim_All = DIVIDE([Total Claims],[Policies Opened])
+```
+
+<br>
+
+**Claim Count**:
+Total number of claims submitted. Policies where zero claims were made are excluded from the count.
+```dax
+Claim Count = CALCULATE([Policy Count], policies[CLAIM_PAID]>0)
+```
+<br>
 
 **Total number of policies opened**:
 Variables are created to count the number of total policies. The total number of opened policies is also equated to the total number of policies. 
@@ -32,27 +61,6 @@ Policies Closed = CALCULATE([Policy Count], USERELATIONSHIP(policies[INSR_END],'
 ```
 <br>
 
-**Average Claim where claims were maid on the policy**:
-The average claim for claims made is calculated by summing up non-zero values under 'CLAIM_PAID' column and then dividing only by the number of non-zero entries under 'CALIM_PAID' column.
-```dax
-Avg. Claim_Made = AVERAGE(policies[CLAIM_PAID])
-```
-
-<br>
-
-**Average Claim of all opened policies**:
-The average claim for all policies that were opened (regardless whether a claim was made) is calculated by adding up all values under 'CLAIM_PAID' column and dividing by the TOTAL number of ROWS. 
-This represents a more accurate representation of the average claims per year as it considers all opened policies instead of only cases where a claim was made.
-```dax
-Avg.Claim_All = DIVIDE([Total Claims],[Policies Opened])
-```
-
-Claim Count: Calculates the number of claims that were made out of the total number of policies opened.
-```dax
-Claim Count = CALCULATE([Policy Count], policies[CLAIM_PAID]>0)
-```
-<br> 
-
 **Bar Chart Labels**:
 Multiple bar chart labels are combined and displayed on each bar. 
 
@@ -71,6 +79,8 @@ return
     v_type & " " & policies & " " & p2c
 ```
 
+<br>
+
 **Creating context to tool tip labels**:
 In the Premium vs Claim (Averages) scatter plot, the tooltip information was further enhanced by adding more information about what vehicle type and make each dot represents. 
 The following DAX expression was used to display the vehicle type and make in addition to the information about the vehicle make's policy.
@@ -81,15 +91,28 @@ Tooltip Header =
 return
     v_type & " - " & v_make
 ```
+<br>
+
+**Custom Tooltip Header**
+A custom tool tip header was created by combining the names of the vehicle type and make into a string to be shown on the tool tip when hovered over the dots in the scatterplot chart of "Premium vs Claim (Average)".
+```dax
+Tooltip Header = 
+    var v_type = SELECTEDVALUE(policies[TYPE_VEHICLE])
+    var v_make = SELECTEDVALUE(policies[MAKE])
+return
+    v_type & " - " & v_make
+```
 
 # Visualizations
 
-## Scatterplot of Average Premium and Claims by Vehicle Type and Make
-Symmetry shading was used to distinguish the Vehicle Type and Make models that were generating profit (purple) from the loss-making vehicle types/makes (red).
+## Average Premium vs Claims by Vehicle Type and Make (Scatterplot)
+The average premiums and claims of each vehicle type and make are plotted on a scatterplot to determine whether majority of vehicles are generating losses (red) or profits (purple). It also allows us to identify the exact vehicle type/make 
 
+The tooltip information is enhanced to include more information about the number of policies opened for each vehicle type/make. That helps in further justifying whether policies should still be continued for a specific vehicle type/make coupled with the location of the scatter point in the chart. <br>
 
-## Premium vs Claims Ratio Scatterplot and Matrix Chart
-Both charts show which vehicle type/make and usage type would be the most worthwhile to invest in based on the ratio values returned. However, that alone does not justify enough for the company to open more insurance policies in. Tool tips are added to provide information about the number of each vehicle types to justify whether to continue creating insurance policies for a vehicle type.
+![premium vs claim](https://github.com/bayyangjie/Insurance-Dashboard-Analysis/blob/main/images/scatterplot.png)
 
-## Proportion of claims by Gender type
-A donut chart was created to display the proportion of claims
+## Policy Claim count by Gender type
+The chart showed that Gender Type 0 had opened the most policies as well as also having the most claims as compared to Gender Type 0 and 1. <br>
+
+![Donut Chart](https://github.com/bayyangjie/Insurance-Dashboard-Analysis/blob/main/images/donut%20chart.png)
