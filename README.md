@@ -97,7 +97,7 @@ return
 <br>
 
 **Custom Tooltip Header**
-A custom tool tip header was created by combining the names of the vehicle type and make into a string to be shown on the tool tip when hovered over the dots in the scatterplot chart of "Premium vs Claim (Average)".
+A custom tool tip header was created by combining the "Vehicle Type" and "Make" string texts and display it on the tool tip when hovered over the dots in the scatterplot chart of "Premium vs Claim (Average)".
 ```dax
 Tooltip Header = 
     var v_type = SELECTEDVALUE(policies[TYPE_VEHICLE])
