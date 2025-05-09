@@ -1,7 +1,8 @@
-# Insurance-Dashboard-Analysis
-This analysis aims to discover what were the reasons that contributed to the losses of an insurance company. <br>
-
+# Insurance Dashboard Analysis
 ![Dashboard](https://github.com/bayyangjie/Insurance-Dashboard-Analysis/blob/main/images/dashboard_overall.png)
+
+# Objective
+The aim of this project is to identify the key factors that contributed to the losses experienced by the insurance company EIC. By analyzing various insurance-related metrics, the goal is to uncover insights that collectively explain the downturn in the company’s business performance. <br>
 
 # Data Transformation
 Data quality issues were identified in the table count of opened and closed policies. Invalid values '1' had to be cleaned up. <br>
@@ -140,4 +141,5 @@ The bar chart below shows the number of opened policies under each vehicle type 
 
 ![bar chart](https://github.com/bayyangjie/Insurance-Dashboard-Analysis/blob/main/images/bar%20chart.png)
 
+# Conclusion [Summarize main reasons for company's downturn]
 
