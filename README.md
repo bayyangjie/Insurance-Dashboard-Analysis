@@ -1,14 +1,17 @@
 # Insurance-Dashboard-Analysis
-This analysis aims to discover what were the reasons that contributed to the losses of an insurance company. 
+This analysis aims to discover what were the reasons that contributed to the losses of an insurance company. <br>
+
 ![Dashboard](https://github.com/bayyangjie/Insurance-Dashboard-Analysis/blob/main/images/dashboard_overall.png)
 
 # Data Transformation
 Data quality issues were identified in the table count of opened and closed policies. Invalid values '1' had to be cleaned up. <br>
 
 Before: <br>
+
 ![policies count issue](https://github.com/bayyangjie/Insurance-Dashboard-Analysis/blob/main/images/policies_count.png)
 
 After: <br>
+
 ![cleaned](https://github.com/bayyangjie/Insurance-Dashboard-Analysis/blob/main/images/policies_count_cleaned.png)
 
 # DAX Measures
@@ -118,6 +121,23 @@ Gender Type "0" had opened the most policies as well as also having the most cla
 ![Donut Chart](https://github.com/bayyangjie/Insurance-Dashboard-Analysis/blob/main/images/donut%20chart.png)
 
 ## Claim Amount by Usage Type
-The chart shows the claim amount of each usage type for each year from 2014 to 2018. It also shows how the rankings of the different usage segments change over the years. <br>
+The ribbon chart shows the total claim amount of each usage type yearly from 2014 to 2018. It also shows how the rankings of the different usage segments change over the years. <br>
 
 ![usage_claim amt_ribbon](https://github.com/bayyangjie/Insurance-Dashboard-Analysis/blob/main/images/ribbon%20chart.png)
+
+## Premium to Claim Ratio by Usage Type
+The matrix chart shows the premium to claims ratio of the different usage types throughout the years from 2014 to 2018. The colours depict the ratios amount from high (red) to medium (orange/yellow) to low (green).
+The chart shows that vehicles with the use type of General Cartage has the lowest overall premium to claim ratio. Given the job nature of land transportation of goods, it could be due to a higher rate of accidents resulting in higher claims being submitted for vehicles in this category. 
+
+On the other hand, "Agricultural Own Farm" has the highest overall premium to claim ratio. This could be due to the low risk nature of the use case in agricultural farming thus resulting in lower claims being submitted.
+
+The results from this plot also tallies with the ribbon chart where it shows "General Cartage" use as the highest ranking in total claim amount every year.
+
+![matrix chart](https://github.com/bayyangjie/Insurance-Dashboard-Analysis/blob/main/images/matrix.png)
+
+## Count of opened policies by Vehicle Type
+The bar chart below shows the number of opened policies under each vehicle type and Motor-Cycles have the highest number followed by Trucks and Pick-ups. This could be due to businesses having these vehicles as the company vehicles thus having to get a vehicle insurance policy before purchasing one. In each bar, the green and red symbols represent premium-to-claim ratio of more than 1 and less than 1 respectively. <br>
+
+![bar chart](https://github.com/bayyangjie/Insurance-Dashboard-Analysis/blob/main/images/bar%20chart.png)
+
+
