@@ -5,7 +5,7 @@
 The aim of this project is to identify the key factors that contributed to the losses experienced by the insurance company EIC. By analyzing various insurance-related metrics, the goal is to uncover insights that collectively explain the downturn in the company’s business performance. <br>
 
 # Data Cleaning
-Invalid values were identified in the table count of opened and closed policies. The invalid values were filtered to be excluded from the analysis. <br>
+Invalid values were identified in the table count of total opened and closed policies. The invalid values were filtered to be excluded from the analysis. <br>
 
 Before: <br>
 
