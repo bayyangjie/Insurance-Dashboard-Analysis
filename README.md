@@ -118,7 +118,7 @@ The tooltip information is enhanced to include information about the number of p
 ![premium vs claim](https://github.com/bayyangjie/Insurance-Dashboard-Analysis/blob/main/images/scatterplot.png)
 
 ## Policy Claim count by Gender type
-Gender Type "0" had opened the most policies as well as also having the most claims as compared to Gender Type "0" and "1". <br>
+Based on the donut chart shown, Gender Type "0" had opened the most policies as well as also having the most claims as compared to Gender Type "0" and "1". <br>
 
 ![Donut Chart](https://github.com/bayyangjie/Insurance-Dashboard-Analysis/blob/main/images/donut%20chart.png)
 
