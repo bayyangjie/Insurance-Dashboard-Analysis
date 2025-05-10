@@ -15,7 +15,7 @@ After: <br>
 
 ![cleaned](https://github.com/bayyangjie/Insurance-Dashboard-Analysis/blob/main/images/policies_count_cleaned.png)
 
-# DAX Measures
+## DAX Measures
 
 **Total Claims**:
 Total amount of claims submitted.
