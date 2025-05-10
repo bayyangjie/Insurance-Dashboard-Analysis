@@ -110,7 +110,7 @@ return
 
 # Visualizations
 
-## Average Premium vs Claims by Vehicle Type and Make (Scatterplot)
+## Average Premium vs Claims by Vehicle Type and Make
 The average premiums and claims of each vehicle type and make are plotted on a scatterplot to determine whether majority of vehicles are generating losses (red) or profits (purple), and this can be viewed yearly using the 'Year' filter.
 
 The tooltip information is enhanced to include information about the number of policies opened for each vehicle type/make. That helps to justify whether policies should be continued for a specific vehicle type/make while considering if the scatter point falls within the profit or loss region denoted by the colours purple and red respectively. <br>
