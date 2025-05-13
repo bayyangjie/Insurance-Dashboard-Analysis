@@ -1,6 +1,19 @@
 # Insurance Financial Analysis 
 ![Dashboard](https://github.com/bayyangjie/Insurance-Dashboard-Analysis/blob/main/images/dashboard_overall.png)
 
+# Contents
+* [Objective](#objective)
+* [Data Cleaning](#data-cleaning)
+* [Data Transformation](#data-transformation)
+    * [DAX Measures](#dax-measures)
+* [Visualizations](#visualizations)
+    * [Average Premium vs Claims by Vehicle Type and Make](#average-premium-vs-claims-by-vehicle-type-and-make)
+    * [Policy Claim count by Gender type](#policy-claim-count-by-gender-type)
+    * [Claim Amount by Usage Type](#claim-amount-by-usage-type)
+    * [Premium to Claim Ratio by Usage Type](#premium-to-claim-ratio-by-usage-type)
+    * [Count of opened policies by Vehicle Type](#count-of-opened-policies-by-vehicle-type)
+* [Conclusion](#conclusion)
+
 # Objective
 This project aims to understand the financial struggles faced by the insurance company EIC and understand what went wrong. <br>
 
