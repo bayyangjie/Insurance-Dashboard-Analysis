@@ -1,4 +1,4 @@
-# Insurance Dashboard Analysis
+# Insurance Financial Analysis 
 ![Dashboard](https://github.com/bayyangjie/Insurance-Dashboard-Analysis/blob/main/images/dashboard_overall.png)
 
 # Objective
