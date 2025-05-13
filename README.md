@@ -2,7 +2,7 @@
 ![Dashboard](https://github.com/bayyangjie/Insurance-Dashboard-Analysis/blob/main/images/dashboard_overall.png)
 
 # Objective
-The aim of this project is to identify the key factors that contributed to the losses experienced by the insurance company EIC. By analyzing various insurance-related metrics, the goal is to uncover insights that collectively explain the downturn in the company’s business performance. <br>
+This project aims to understand the financial struggles faced by the insurance company EIC and understand what went wrong. <br>
 
 # Data Cleaning
 Invalid values were identified in the table count of total opened and closed policies. The invalid values were filtered to be excluded from the analysis. <br>
@@ -142,5 +142,7 @@ The bar chart below shows the number of opened policies under each vehicle type 
 
 ![bar chart](https://github.com/bayyangjie/Insurance-Dashboard-Analysis/blob/main/images/bar%20chart.png)
 
-# Conclusion [Summarize main reasons for company's downturn]
-
+# Conclusion 
+The conclusion summarises the main reasons contributing to the downturn of the company as well as recommendations on areas to focus on for driving profitability.
+- Motorcycles have a positive premium-to-claims ratio while also having one of the highest counts of opened policies with the company. It is worth continuing to create policies for vehicles in this category.
+- On the other hand, "Trucks" category is one of the vehicle types that has the most number of opened policies as well as having the highest claim amount per year for it's different usage purposes. Throughout the years, the premium-to-claims ratio is always negative (red dot) and most truck models are also always in the negative region of average premium-to-claims ratio. The insurance company could consider stopping issuance or reducing the number of issued vehicle policies for trucks since it is resulting in negative ROIs throughout the years.
